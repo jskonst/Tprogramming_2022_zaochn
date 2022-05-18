@@ -10,13 +10,22 @@ print("-------")
 say_hello()
 print("end")
 
-def summ(a, b):
-    b += 1
-    print(a + b)
-    print(f"b in function = {b}")
+def summ(a, b, d = 0):
+    c = a + b + d
+    return c
 
 summ(4, 6)
 c = 5
 b = 9
-summ(c, b)
+res = summ(c, b)
 print(f"b after function = {b}")
+print(f"result = {res}")
+
+res = summ(c, b, 15)
+print(f"result = {res}")
+
+res = summ(b = 5, a = 3, d = 20)
+print(f"result = {res}")
+
+a = str(3) + "_some"
+print(a)
